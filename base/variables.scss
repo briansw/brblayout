@@ -1,0 +1,39 @@
+// Colors
+$black: #000;
+$white: #fff;
+$gray:  #ccc;
+
+// Fonts
+$sans_defaults: Helvetica, Arial, sans-serif;
+$sans: $sans_defaulst;
+
+// Type sizes
+$large_size:   24px;
+$regular_size: 15px;
+$small_size:   12px;
+$leading:      1.2em;
+
+// Spacing
+$gutter:       20px;
+$gutters:      $gutter * 2;
+$hand_gutter:  10px;
+$hand_gutters: $hand_gutter * 2;
+
+// Margins
+$large_margin: 85px;
+$margin:       60px;
+$small_margin: 15px;
+$tiny_margin:  7px;
+
+// Breakpoints
+$ext_min_width:   1230px;
+
+$desk_min_width:  960px;
+$desk_max_width:  1229px;
+
+$tab_min_width:   768px;
+$tab_max_width:   959px;
+
+$hand_min_width:  0;
+$hand_max_width:  767px;
+$hand_unit_width: 100%;

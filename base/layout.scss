@@ -1,0 +1,18 @@
+%c1 { width: 50%;  padding-left: $gutter; padding-right: $gutter; }
+%c2 { width: 50%;  padding-left: $gutter; padding-right: $gutter; }
+%c3 { width: 50%;  padding-left: $gutter; padding-right: $gutter; }
+%c4 { width: 100%; padding-left: $gutter; padding-right: $gutter; }
+
+@media only screen and (min-width: $ext_min_width) {
+  %c1 { width: 25%;  }
+  %c2 { width: 50%;  }
+  %c3 { width: 75%;  }
+  %c4 { width: 100%; }
+}
+
+@media only screen and (min-width: $hand_min_width) and (max-width: $hand_max_width) {
+  %c1 { width: 100%; }
+  %c2 { width: 100%; }
+  %c3 { width: 100%; }
+  %c4 { width: 100%; }
+}

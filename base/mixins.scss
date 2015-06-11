@@ -1,0 +1,47 @@
+@mixin gridparent($columns) {
+  @extend %#{$columns};
+  @include whitespacefix;
+  @include nogutters;
+}
+
+@mixin griditem($columns, $font_size) {
+  @extend %#{$columns};
+  @extend %#{$font_size};
+  @include inlineblock;
+}
+
+@mixin margin($direction: bottom, $value: $margin) {
+  margin-#{direction}: $value;
+}
+
+@include withgutters {
+  padding-left: $gutter;
+  padding-right: $gutter;
+}
+
+@mixin nogutters {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+@mixin whitespacefix {
+  font-size: 0;
+  line-height: 0;
+  letter-spacing: -4px;
+}
+
+@mixin inlineblock {
+  display: inline-block;
+  *display: inline;
+  zoom: 1;
+  letter-spacing: 0;
+}
+
+// General Breakpoint mixins
+@mixin ext { @media only screen and (min-width: $ext_min_width) and (max-width: $ext_max_width) { @content; } }
+
+@mixin desk { @media only screen and (min-width: $desk_min_width) and (max-width: $desk_max_width) { @content; } }
+
+@mixin tab { @media only screen and (min-width: $tab_min_width) and (max-width: $tab_max_width) { @content; } }
+
+@mixin hand { @media only screen and (min-width: $hand_min_width) and (max-width: $hand_max_width) { @content; } }
